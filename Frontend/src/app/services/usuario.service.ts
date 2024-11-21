@@ -6,7 +6,9 @@ import { environment } from 'src/environments/environment';
 import { Usuario } from 'src/app/domain/Usuario';
 import { Chave } from 'src/app/domain/Chave';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class UsuarioService {
 
   url = environment.apiUrl;

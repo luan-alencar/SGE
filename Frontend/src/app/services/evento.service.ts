@@ -5,7 +5,9 @@ import { Evento } from 'src/app/domain/Evento';
 import { TipoEvento } from 'src/app/domain/TipoEvento';
 import { environment } from 'src/environments/environment';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class EventoService {
 
   url = `${environment.apiUrl}/eventos`;

@@ -5,10 +5,13 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  public appPages = [
-    { title: 'Eventos', url: '/folder/eventos', icon: 'calendar' },
-    { title: 'Usuarios', url: '/folder/usuarios', icon: 'person' }
+  appPages = [
+    { title: 'Listar Eventos', url: '/eventos-list', icon: 'calendar' },
+    { title: 'Cadastrar Evento', url: '/evento-form', icon: 'add-circle' },
+    { title: 'Listar Usuários', url: '/usuarios-list', icon: 'people' },
+    { title: 'Cadastrar Usuário', url: '/usuario-form', icon: 'person-add' }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  
+  public labels = [ 'Notes'];
   constructor() {}
 }

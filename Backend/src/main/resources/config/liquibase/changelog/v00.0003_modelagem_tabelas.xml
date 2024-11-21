@@ -1,0 +1,57 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="9" author="luan.alencar">
+        <insert tableName="situacao_preinscricao">
+            <column name="id_situacao">1</column>
+            <column name="descricao">Aguardando Aprovação</column>
+        </insert>
+        <insert tableName="situacao_preinscricao">
+            <column name="id_situacao">2</column>
+            <column name="descricao">Aprovado</column>
+        </insert>
+        <insert tableName="situacao_preinscricao">
+            <column name="id_situacao">3</column>
+            <column name="descricao">Recusado</column>
+        </insert>
+        <insert tableName="situacao_preinscricao">
+            <column name="id_situacao">4</column>
+            <column name="descricao">Cancelado</column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="10" author="luan.alencar">
+        <insert tableName="tipo_evento">
+            <column name="id_tipo">1</column>
+            <column name="descricao">Workshop</column>
+        </insert>
+        <insert tableName="tipo_evento">
+            <column name="id_tipo">2</column>
+            <column name="descricao">Palestra</column>
+        </insert>
+        <insert tableName="tipo_evento">
+            <column name="id_tipo">3</column>
+            <column name="descricao">Mini Curso</column>
+        </insert>
+        <insert tableName="tipo_evento">
+            <column name="id_tipo">4</column>
+            <column name="descricao">Treinamento</column>
+        </insert>
+    </changeSet>
+
+    <changeSet id="11" author="luan.alencar">
+        <insert tableName="usuario">
+            <column name="id_usuario">1</column>
+            <column name="chave_unica">admin</column>
+            <column name="cpf">11111111111</column>
+            <column name="nome">admin</column>
+            <column name="email">admin@admin.com</column>
+            <column name="telefone">11111111111111</column>
+            <column name="dt_nasc">2021-02-02</column>
+            <column name="admin">true</column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
